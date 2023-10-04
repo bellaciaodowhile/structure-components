@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1200px) {
+    .components_main {
+        &_outlined {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .components_aside {
+        left: -250px;
+        &--active {
+            left: 0;
+        }
+    }
+    .components_main {
+        padding: 60px 40px 20px 40px;
+    }
+    .components_trigger_aside {
+        display: block;
+    }
+}

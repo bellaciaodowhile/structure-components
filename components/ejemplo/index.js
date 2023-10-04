@@ -1,0 +1,1 @@
+alert('Hola vengo de ejemplo/index.js')

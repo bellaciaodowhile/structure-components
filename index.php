@@ -6,11 +6,15 @@
     <title>Gloobal 8 | Components</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/prism.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
 </head>
 <body dark>
     <header>
         <nav class="nav_components">
             <div class="nav_components_logo">
+                <div class="components_trigger_aside">
+                    <i class="material-icons">menu</i>
+                </div>
                 Logo
             </div>
             <ul class="nav_components_base">
@@ -47,24 +51,10 @@
         </button> -->
         <h3 class="components_aside_title">Componentes</h3>
         <a class="components_aside_item">
-            Selects
+            Inicio
         </a>
         <a class="components_aside_item">
-            Cards
-        </a>
-        <a class="components_aside_item">
-            Breadcumbs
-        </a>
-        <div class="components_aside_sp"></div>
-        <h3 class="components_aside_title">Others</h3>
-        <a class="components_aside_item">
-            Buttons
-        </a>
-        <a class="components_aside_item">
-            Helpers
-        </a>
-        <a class="components_aside_item">
-            Navbars
+            Ejemplo
         </a>
     </aside>
     <main class="components_main">

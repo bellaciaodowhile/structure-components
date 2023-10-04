@@ -60,14 +60,10 @@
         // Load data components
         const allLinksComponents = [...document.querySelectorAll('.components_aside_item')];
         allLinksComponents.map((link, index) => {
-            console.log(link)
             link.onclick = (e) => {
                 e.preventDefault();
-                // console.log('Selects')
                 let component = link.textContent.trim().toLowerCase();
-                console.log(component)
                 loadContent(component)
-
             }
         })
 
@@ -126,5 +122,22 @@
             xhttp.open("GET", "components/"+ folder +"/index.php", true);
             xhttp.send();
         }
-        loadContent('home')
+        loadContent('inicio');
+        
+        // Trigger menu aside
+        const triggerMenuAside = document.querySelector('.components_trigger_aside');
+        const aside = document.querySelector('.components_aside')
+        document.onclick = (e) => {
+            if (aside.classList.contains('components_aside--active')) {
+                if (!aside.contains(e.target)){
+                    aside.classList.toggle('components_aside--active')
+                }
+            } else {
+                if (triggerMenuAside.contains(e.target)) {
+                    aside.classList.toggle('components_aside--active')
+                    console.log('Hola')
+                }
+            }
+        }
+
     }());

@@ -4,8 +4,10 @@
     padding: 60px 40px 20px 290px;
     display: flex;
     gap: 40px;
+    transition: $trs;
     &_content { 
         width: 100%;
+        animation: $fadeInDown;
     }
     &_outlined {
         position: sticky;

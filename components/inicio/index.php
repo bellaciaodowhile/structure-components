@@ -56,9 +56,17 @@
 </xmp>
 </code></pre>
 <p class="components_paragraph">
-    En el <span class="components_code">index.php</span> se realiza la documentación y la demostración del componente utilizando los <span class="components_code">títulos</span>, <span class="components_code">subtítulos</span>, <span class="components_code">separadores</span> y los demás 
+    En el <span class="components_code">index.php</span> se realiza la documentación y la demostración del componente utilizando los <span class="components_code">títulos</span>, <span class="components_code">subtítulos</span>, <span class="components_code">separadores</span> y los demás items para documentar.
 </p>
-
+<p class="components_paragraph">
+    Ahora, en el <span class="components_code">index.css</span> se coloca simplemente todo el css del componente, tomando en cuenta que se debe usar el método <span class="components_code">BEM</span> para que no haya problemas con la especificidad de otros componentes.
+</p>
+<p class="components_paragraph">
+    Y por útlitmo, en el <span class="components_code">index.js</span> se coloca simplemente todo el JavsScript del componente. 
+</p>
+<div class="components_note">
+    <strong class="components_color_primary">NOTA:</strong> Se recomienda que los selectores mediante el JavaScript sean con <span class="components_code">clases</span> o <span class="components_code">id´s</span> para que no haya problema al usar una etiqueta <span class="components_code">html</span> como selector.
+</div>
 <!-- Títulos -->
 <hr class="components_sp">
 <h2 class="components_subtitle">
@@ -309,7 +317,13 @@
 <span class="components_color_primary">color</span>
 </xmp>
 </code></pre>
-
+<hr class="components_sp">
+<h2 class="components_subtitle">
+    <a href="#guide" class="components_sublink">#</a> ¡Listo, a trabajar!
+</h2>
+<p class="components_paragraph">
+    Eso es todo, espero que puedas registrar un componente sin inconvenientes. Sin embargo al tener alguna duda, no tardes en contactarnos para buscar una solución óptima para el problema.
+</p>
 
 
 

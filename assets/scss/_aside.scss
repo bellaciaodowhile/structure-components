@@ -7,6 +7,9 @@
     padding: 20px;
     border-right: 1px solid $color-silver-transparent;
     z-index: 1;
+    transition: $trs;
+    left: 0;
+    background: $color-dark;
     &::-webkit-scrollbar {
         width: 10px;
     }
@@ -42,4 +45,11 @@
         padding: 10px;
         margin-bottom: $margin-bottom;
     }
+    
+}
+// trigger
+.components_trigger_aside {
+    display: none;
+    margin-right: 10px;
+    cursor: pointer;
 }
