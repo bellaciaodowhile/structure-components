@@ -1,0 +1,132 @@
+.components {
+    &_title {
+        font-size: 2.5em;
+        position: relative;
+        transition: $trs;
+        &:hover {
+            .components_sublink {
+                opacity: 1;
+            }
+        }
+
+    }
+    &_sublink {
+        position: absolute;
+        left: -35px;
+        top: -2px;
+        text-decoration: none;
+        opacity: 0;
+        transition: $trs;
+        font-size: 1.2em;
+        color: $color-primary;
+        padding: 0 5px;
+
+        &:hover {
+            transform: translateY(-1px);
+        }
+    }
+
+    &_subtitle {
+        position: relative;
+        font-size: 1.5em;
+        margin-bottom: $margin-bottom;
+
+        &:hover {
+            .components_sublink {
+                opacity: 1;
+                left: -25px;
+            }
+        }
+    }
+
+    &_h3 {
+        margin-bottom: $margin-bottom;
+    }
+
+    &_sp {
+        width: 100%;
+        border-bottom: 1px solid $color-silver-transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin: $margin-sp-content 0;
+    }
+
+    &_paragraph {
+        line-height: 1.8;
+        margin-bottom: $margin-bottom;
+        // font-size: 16px;
+    }
+
+    &_btn {
+        width: 100%;
+        background: $color-primary;
+        color: $color-light;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        text-transform: capitalize;
+        transition: $trs;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+
+    &_ul {
+        padding-left: 20px;
+        line-height: 1.8;
+        margin-bottom: $margin-bottom;
+
+        &_li {
+            position: relative;
+
+            // font-size: 16px;
+            &::before {
+                content: "";
+                display: block;
+                width: 5px;
+                height: 5px;
+                background: #676767;
+                border-radius: 50%;
+                position: absolute;
+                left: -20px;
+                top: 10px;
+            }
+        }
+    }
+
+    &_inline {
+        display: inline;
+    }
+
+    &_code {
+        padding: 5px;
+        background: $color-code;
+        border-radius: 6px;
+        color: $color-pink;
+    }
+
+    &_color_primary {
+        color: $color-primary;
+    }
+
+    &_note {
+        border: 2px solid $color-primary;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: $margin-bottom;
+        background: $color-code;
+        line-height: $line-height;
+        &--important {
+            border-color: $color-red;
+        }
+    }
+    &_demo {
+        padding: 15px;
+        border: 2px solid $color-light;
+        border-radius: 10px;
+        margin-bottom: $margin-bottom;
+    }
+}

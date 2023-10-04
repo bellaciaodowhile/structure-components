@@ -1,0 +1,35 @@
+.nav_components {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid $color-silver-transparent;
+    background: $color-dark;
+    z-index: 1;
+    &_base {
+        display: flex;
+    }
+    &_item {
+        padding: 10px;
+        text-decoration: none;
+        color: $color-light;
+        display: block;
+        border-radius: 10px;
+        font-weight: 600;
+        transition: $trs;
+        font-size: 14px;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    &_logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // padding: 15px;
+        font-weight: 800;
+    }
+}

@@ -1,0 +1,49 @@
+.components_main {
+    position: relative;
+    margin-top: 60px;
+    padding: 60px 40px 20px 290px;
+    display: flex;
+    gap: 40px;
+    &_content { 
+        width: 100%;
+    }
+    &_outlined {
+        position: sticky;
+        top: 90px;
+        width: 250px;
+        min-width: 250px;
+        // background: red;
+        align-self: flex-start;
+        &_items {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            &_item {
+                padding: 5px 0;
+                &_link {
+                    color: rgba($color: $color-light, $alpha: 0.5);
+                    text-decoration: none;
+                    transition: $trs;
+                    &:hover {
+                        color: $color-light;
+                    }
+                    &_active {
+                        color: $color-light;
+                    }
+                }
+            }
+            &_marker {
+                transition: $trs;
+                opacity: 0;
+                position: absolute;
+                width: 4px;
+                height: 25px;
+                background: $color-primary;
+                border-radius: 6px;
+                left: -10px;
+                top: 0;
+            }
+        }
+        
+    }
+}
