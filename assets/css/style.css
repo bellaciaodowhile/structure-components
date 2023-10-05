@@ -190,10 +190,10 @@ body[dark] {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-bottom: 1px solid rgba(84, 84, 84, 0.5019607843);
-  background: #1a1a1a;
-  z-index: 1;
+  background: #21252b;
+  z-index: 2;
 }
 .nav_components_base {
   display: flex;
@@ -225,6 +225,7 @@ body[dark] {
   display: flex;
   gap: 40px;
   transition: all 200ms ease-in-out;
+  background: #282c34;
 }
 .components_main_content {
   width: 100%;
@@ -279,7 +280,7 @@ body[dark] {
   z-index: 1;
   transition: all 200ms ease-in-out;
   left: 0;
-  background: #1a1a1a;
+  background: #21252b;
 }
 .components_aside::-webkit-scrollbar {
   width: 10px;

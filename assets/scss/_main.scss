@@ -5,6 +5,7 @@
     display: flex;
     gap: 40px;
     transition: $trs;
+    background: $color-main;
     &_content { 
         width: 100%;
         animation: $fadeInDown;
